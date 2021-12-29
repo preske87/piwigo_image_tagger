@@ -1,0 +1,683 @@
+{
+    "stat": "ok",
+    "result": {
+        "paging": {
+            "page": 0,
+            "per_page": 10,
+            "count": 10,
+            "total_count": "139"
+        },
+        "images": [
+            {
+                "id": 1,
+                "width": 4608,
+                "height": 3456,
+                "hit": 0,
+                "file": "IMG_20191130_151250.jpg",
+                "name": "IMG 20191130 151250",
+                "comment": null,
+                "date_creation": "2019-11-30 15:12:51",
+                "date_available": "2021-01-08 18:35:03",
+                "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/1",
+                "element_url": "https:\/\/piwigo.lcks.de\/upload\/2021\/01\/08\/20210108183503-8783d7ad.jpg",
+                "derivatives": {
+                    "square": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183503-8783d7ad-sq.jpg",
+                        "width": 120,
+                        "height": 120
+                    },
+                    "thumb": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183503-8783d7ad-th.jpg",
+                        "width": 144,
+                        "height": 108
+                    },
+                    "2small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183503-8783d7ad-2s.jpg",
+                        "width": 240,
+                        "height": 180
+                    },
+                    "xsmall": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183503-8783d7ad-xs.jpg",
+                        "width": 432,
+                        "height": 324
+                    },
+                    "small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183503-8783d7ad-sm.jpg",
+                        "width": 576,
+                        "height": 432
+                    },
+                    "medium": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183503-8783d7ad-me.jpg",
+                        "width": 792,
+                        "height": 594
+                    },
+                    "large": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183503-8783d7ad-la.jpg",
+                        "width": 1008,
+                        "height": 756
+                    },
+                    "xlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183503-8783d7ad-xl.jpg",
+                        "width": 1224,
+                        "height": 918
+                    },
+                    "xxlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183503-8783d7ad-xx.jpg",
+                        "width": 1656,
+                        "height": 1242
+                    }
+                },
+                "categories": [
+                    {
+                        "id": 1,
+                        "url": "https:\/\/piwigo.lcks.de\/index.php?\/category\/1",
+                        "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/1\/category\/1"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "width": 4608,
+                "height": 3456,
+                "hit": 0,
+                "file": "IMG_20191130_151300.jpg",
+                "name": "IMG 20191130 151300",
+                "comment": null,
+                "date_creation": "2019-11-30 15:13:01",
+                "date_available": "2021-01-08 18:35:07",
+                "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/2",
+                "element_url": "https:\/\/piwigo.lcks.de\/upload\/2021\/01\/08\/20210108183507-309cd8ef.jpg",
+                "derivatives": {
+                    "square": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183507-309cd8ef-sq.jpg",
+                        "width": 120,
+                        "height": 120
+                    },
+                    "thumb": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183507-309cd8ef-th.jpg",
+                        "width": 144,
+                        "height": 108
+                    },
+                    "2small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183507-309cd8ef-2s.jpg",
+                        "width": 240,
+                        "height": 180
+                    },
+                    "xsmall": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183507-309cd8ef-xs.jpg",
+                        "width": 432,
+                        "height": 324
+                    },
+                    "small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183507-309cd8ef-sm.jpg",
+                        "width": 576,
+                        "height": 432
+                    },
+                    "medium": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183507-309cd8ef-me.jpg",
+                        "width": 792,
+                        "height": 594
+                    },
+                    "large": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183507-309cd8ef-la.jpg",
+                        "width": 1008,
+                        "height": 756
+                    },
+                    "xlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183507-309cd8ef-xl.jpg",
+                        "width": 1224,
+                        "height": 918
+                    },
+                    "xxlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183507-309cd8ef-xx.jpg",
+                        "width": 1656,
+                        "height": 1242
+                    }
+                },
+                "categories": [
+                    {
+                        "id": 1,
+                        "url": "https:\/\/piwigo.lcks.de\/index.php?\/category\/1",
+                        "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/2\/category\/1"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "width": 2592,
+                "height": 1940,
+                "hit": 0,
+                "file": "MVIMG_20191130_151321.jpg",
+                "name": "MVIMG 20191130 151321",
+                "comment": null,
+                "date_creation": "2019-11-30 15:13:22",
+                "date_available": "2021-01-08 18:35:10",
+                "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/3",
+                "element_url": "https:\/\/piwigo.lcks.de\/upload\/2021\/01\/08\/20210108183510-257f37a7.jpg",
+                "derivatives": {
+                    "square": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183510-257f37a7-sq.jpg",
+                        "width": 120,
+                        "height": 120
+                    },
+                    "thumb": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183510-257f37a7-th.jpg",
+                        "width": 144,
+                        "height": 107
+                    },
+                    "2small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183510-257f37a7-2s.jpg",
+                        "width": 240,
+                        "height": 179
+                    },
+                    "xsmall": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183510-257f37a7-xs.jpg",
+                        "width": 432,
+                        "height": 323
+                    },
+                    "small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183510-257f37a7-sm.jpg",
+                        "width": 576,
+                        "height": 431
+                    },
+                    "medium": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183510-257f37a7-me.jpg",
+                        "width": 792,
+                        "height": 592
+                    },
+                    "large": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183510-257f37a7-la.jpg",
+                        "width": 1008,
+                        "height": 754
+                    },
+                    "xlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183510-257f37a7-xl.jpg",
+                        "width": 1224,
+                        "height": 916
+                    },
+                    "xxlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183510-257f37a7-xx.jpg",
+                        "width": 1656,
+                        "height": 1239
+                    }
+                },
+                "categories": [
+                    {
+                        "id": 1,
+                        "url": "https:\/\/piwigo.lcks.de\/index.php?\/category\/1",
+                        "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/3\/category\/1"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "width": 4608,
+                "height": 3456,
+                "hit": 0,
+                "file": "IMG_20191130_151250.jpg",
+                "name": "IMG 20191130 151250",
+                "comment": null,
+                "date_creation": "2019-11-30 15:12:51",
+                "date_available": "2021-01-08 18:35:14",
+                "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/4",
+                "element_url": "https:\/\/piwigo.lcks.de\/upload\/2021\/01\/08\/20210108183514-8783d7ad.jpg",
+                "derivatives": {
+                    "square": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183514-8783d7ad-sq.jpg",
+                        "width": 120,
+                        "height": 120
+                    },
+                    "thumb": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183514-8783d7ad-th.jpg",
+                        "width": 144,
+                        "height": 108
+                    },
+                    "2small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183514-8783d7ad-2s.jpg",
+                        "width": 240,
+                        "height": 180
+                    },
+                    "xsmall": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183514-8783d7ad-xs.jpg",
+                        "width": 432,
+                        "height": 324
+                    },
+                    "small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183514-8783d7ad-sm.jpg",
+                        "width": 576,
+                        "height": 432
+                    },
+                    "medium": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183514-8783d7ad-me.jpg",
+                        "width": 792,
+                        "height": 594
+                    },
+                    "large": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183514-8783d7ad-la.jpg",
+                        "width": 1008,
+                        "height": 756
+                    },
+                    "xlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183514-8783d7ad-xl.jpg",
+                        "width": 1224,
+                        "height": 918
+                    },
+                    "xxlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183514-8783d7ad-xx.jpg",
+                        "width": 1656,
+                        "height": 1242
+                    }
+                },
+                "categories": [
+                    {
+                        "id": 1,
+                        "url": "https:\/\/piwigo.lcks.de\/index.php?\/category\/1",
+                        "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/4\/category\/1"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "width": 4608,
+                "height": 3456,
+                "hit": 0,
+                "file": "IMG_20191130_151300.jpg",
+                "name": "IMG 20191130 151300",
+                "comment": null,
+                "date_creation": "2019-11-30 15:13:01",
+                "date_available": "2021-01-08 18:35:18",
+                "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/5",
+                "element_url": "https:\/\/piwigo.lcks.de\/upload\/2021\/01\/08\/20210108183518-309cd8ef.jpg",
+                "derivatives": {
+                    "square": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183518-309cd8ef-sq.jpg",
+                        "width": 120,
+                        "height": 120
+                    },
+                    "thumb": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183518-309cd8ef-th.jpg",
+                        "width": 144,
+                        "height": 108
+                    },
+                    "2small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183518-309cd8ef-2s.jpg",
+                        "width": 240,
+                        "height": 180
+                    },
+                    "xsmall": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183518-309cd8ef-xs.jpg",
+                        "width": 432,
+                        "height": 324
+                    },
+                    "small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183518-309cd8ef-sm.jpg",
+                        "width": 576,
+                        "height": 432
+                    },
+                    "medium": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183518-309cd8ef-me.jpg",
+                        "width": 792,
+                        "height": 594
+                    },
+                    "large": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183518-309cd8ef-la.jpg",
+                        "width": 1008,
+                        "height": 756
+                    },
+                    "xlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183518-309cd8ef-xl.jpg",
+                        "width": 1224,
+                        "height": 918
+                    },
+                    "xxlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183518-309cd8ef-xx.jpg",
+                        "width": 1656,
+                        "height": 1242
+                    }
+                },
+                "categories": [
+                    {
+                        "id": 1,
+                        "url": "https:\/\/piwigo.lcks.de\/index.php?\/category\/1",
+                        "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/5\/category\/1"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "width": 2592,
+                "height": 1940,
+                "hit": 1,
+                "file": "MVIMG_20191130_151321.jpg",
+                "name": "MVIMG 20191130 151321",
+                "comment": null,
+                "date_creation": "2019-11-30 15:13:22",
+                "date_available": "2021-01-08 18:35:24",
+                "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/6",
+                "element_url": "https:\/\/piwigo.lcks.de\/upload\/2021\/01\/08\/20210108183524-257f37a7.jpg",
+                "derivatives": {
+                    "square": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183524-257f37a7-sq.jpg",
+                        "width": 120,
+                        "height": 120
+                    },
+                    "thumb": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183524-257f37a7-th.jpg",
+                        "width": 144,
+                        "height": 107
+                    },
+                    "2small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183524-257f37a7-2s.jpg",
+                        "width": 240,
+                        "height": 179
+                    },
+                    "xsmall": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183524-257f37a7-xs.jpg",
+                        "width": 432,
+                        "height": 323
+                    },
+                    "small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183524-257f37a7-sm.jpg",
+                        "width": 576,
+                        "height": 431
+                    },
+                    "medium": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183524-257f37a7-me.jpg",
+                        "width": 792,
+                        "height": 592
+                    },
+                    "large": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183524-257f37a7-la.jpg",
+                        "width": 1008,
+                        "height": 754
+                    },
+                    "xlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183524-257f37a7-xl.jpg",
+                        "width": 1224,
+                        "height": 916
+                    },
+                    "xxlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183524-257f37a7-xx.jpg",
+                        "width": 1656,
+                        "height": 1239
+                    }
+                },
+                "categories": [
+                    {
+                        "id": 1,
+                        "url": "https:\/\/piwigo.lcks.de\/index.php?\/category\/1",
+                        "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/6\/category\/1"
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "width": 4608,
+                "height": 3456,
+                "hit": 3,
+                "file": "IMG_20191130_151250.jpg",
+                "name": "IMG 20191130 151250",
+                "comment": null,
+                "date_creation": "2019-11-30 15:12:51",
+                "date_available": "2021-01-08 18:35:37",
+                "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/7",
+                "element_url": "https:\/\/piwigo.lcks.de\/upload\/2021\/01\/08\/20210108183537-8783d7ad.jpg",
+                "derivatives": {
+                    "square": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183537-8783d7ad-sq.jpg",
+                        "width": 120,
+                        "height": 120
+                    },
+                    "thumb": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183537-8783d7ad-th.jpg",
+                        "width": 144,
+                        "height": 108
+                    },
+                    "2small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183537-8783d7ad-2s.jpg",
+                        "width": 240,
+                        "height": 180
+                    },
+                    "xsmall": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183537-8783d7ad-xs.jpg",
+                        "width": 432,
+                        "height": 324
+                    },
+                    "small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183537-8783d7ad-sm.jpg",
+                        "width": 576,
+                        "height": 432
+                    },
+                    "medium": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183537-8783d7ad-me.jpg",
+                        "width": 792,
+                        "height": 594
+                    },
+                    "large": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183537-8783d7ad-la.jpg",
+                        "width": 1008,
+                        "height": 756
+                    },
+                    "xlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183537-8783d7ad-xl.jpg",
+                        "width": 1224,
+                        "height": 918
+                    },
+                    "xxlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183537-8783d7ad-xx.jpg",
+                        "width": 1656,
+                        "height": 1242
+                    }
+                },
+                "categories": [
+                    {
+                        "id": 1,
+                        "url": "https:\/\/piwigo.lcks.de\/index.php?\/category\/1",
+                        "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/7\/category\/1"
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "width": 4608,
+                "height": 3456,
+                "hit": 3,
+                "file": "IMG_20191130_151300.jpg",
+                "name": "IMG 20191130 151300",
+                "comment": null,
+                "date_creation": "2019-11-30 15:13:01",
+                "date_available": "2021-01-08 18:35:42",
+                "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/8",
+                "element_url": "https:\/\/piwigo.lcks.de\/upload\/2021\/01\/08\/20210108183542-309cd8ef.jpg",
+                "derivatives": {
+                    "square": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183542-309cd8ef-sq.jpg",
+                        "width": 120,
+                        "height": 120
+                    },
+                    "thumb": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183542-309cd8ef-th.jpg",
+                        "width": 144,
+                        "height": 108
+                    },
+                    "2small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183542-309cd8ef-2s.jpg",
+                        "width": 240,
+                        "height": 180
+                    },
+                    "xsmall": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183542-309cd8ef-xs.jpg",
+                        "width": 432,
+                        "height": 324
+                    },
+                    "small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183542-309cd8ef-sm.jpg",
+                        "width": 576,
+                        "height": 432
+                    },
+                    "medium": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183542-309cd8ef-me.jpg",
+                        "width": 792,
+                        "height": 594
+                    },
+                    "large": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183542-309cd8ef-la.jpg",
+                        "width": 1008,
+                        "height": 756
+                    },
+                    "xlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183542-309cd8ef-xl.jpg",
+                        "width": 1224,
+                        "height": 918
+                    },
+                    "xxlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183542-309cd8ef-xx.jpg",
+                        "width": 1656,
+                        "height": 1242
+                    }
+                },
+                "categories": [
+                    {
+                        "id": 1,
+                        "url": "https:\/\/piwigo.lcks.de\/index.php?\/category\/1",
+                        "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/8\/category\/1"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "width": 2592,
+                "height": 1940,
+                "hit": 2,
+                "file": "MVIMG_20191130_151321.jpg",
+                "name": "MVIMG 20191130 151321",
+                "comment": null,
+                "date_creation": "2019-11-30 15:13:22",
+                "date_available": "2021-01-08 18:35:45",
+                "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/9",
+                "element_url": "https:\/\/piwigo.lcks.de\/upload\/2021\/01\/08\/20210108183545-257f37a7.jpg",
+                "derivatives": {
+                    "square": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183545-257f37a7-sq.jpg",
+                        "width": 120,
+                        "height": 120
+                    },
+                    "thumb": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183545-257f37a7-th.jpg",
+                        "width": 144,
+                        "height": 107
+                    },
+                    "2small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183545-257f37a7-2s.jpg",
+                        "width": 240,
+                        "height": 179
+                    },
+                    "xsmall": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183545-257f37a7-xs.jpg",
+                        "width": 432,
+                        "height": 323
+                    },
+                    "small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183545-257f37a7-sm.jpg",
+                        "width": 576,
+                        "height": 431
+                    },
+                    "medium": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183545-257f37a7-me.jpg",
+                        "width": 792,
+                        "height": 592
+                    },
+                    "large": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183545-257f37a7-la.jpg",
+                        "width": 1008,
+                        "height": 754
+                    },
+                    "xlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183545-257f37a7-xl.jpg",
+                        "width": 1224,
+                        "height": 916
+                    },
+                    "xxlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183545-257f37a7-xx.jpg",
+                        "width": 1656,
+                        "height": 1239
+                    }
+                },
+                "categories": [
+                    {
+                        "id": 1,
+                        "url": "https:\/\/piwigo.lcks.de\/index.php?\/category\/1",
+                        "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/9\/category\/1"
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "width": 4000,
+                "height": 3000,
+                "hit": 0,
+                "file": "YDXJ0325.JPG",
+                "name": "YDXJ0325",
+                "comment": null,
+                "date_creation": "2019-11-30 14:04:33",
+                "date_available": "2021-01-08 18:35:49",
+                "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/10",
+                "element_url": "https:\/\/piwigo.lcks.de\/upload\/2021\/01\/08\/20210108183549-082691fe.jpg",
+                "derivatives": {
+                    "square": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183549-082691fe-sq.jpg",
+                        "width": 120,
+                        "height": 120
+                    },
+                    "thumb": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183549-082691fe-th.jpg",
+                        "width": 144,
+                        "height": 108
+                    },
+                    "2small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183549-082691fe-2s.jpg",
+                        "width": 240,
+                        "height": 180
+                    },
+                    "xsmall": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183549-082691fe-xs.jpg",
+                        "width": 432,
+                        "height": 324
+                    },
+                    "small": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183549-082691fe-sm.jpg",
+                        "width": 576,
+                        "height": 432
+                    },
+                    "medium": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183549-082691fe-me.jpg",
+                        "width": 792,
+                        "height": 594
+                    },
+                    "large": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183549-082691fe-la.jpg",
+                        "width": 1008,
+                        "height": 756
+                    },
+                    "xlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/i.php?\/upload\/2021\/01\/08\/20210108183549-082691fe-xl.jpg",
+                        "width": 1224,
+                        "height": 918
+                    },
+                    "xxlarge": {
+                        "url": "https:\/\/piwigo.lcks.de\/_data\/i\/upload\/2021\/01\/08\/20210108183549-082691fe-xx.jpg",
+                        "width": 1656,
+                        "height": 1242
+                    }
+                },
+                "categories": [
+                    {
+                        "id": 1,
+                        "url": "https:\/\/piwigo.lcks.de\/index.php?\/category\/1",
+                        "page_url": "https:\/\/piwigo.lcks.de\/picture.php?\/10\/category\/1"
+                    }
+                ]
+            }
+        ]
+    }
+}

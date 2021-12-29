@@ -1,0 +1,16 @@
+{
+    "azure_ai_endpoint_url_images": "https://replace-with-your-url.cognitiveservices.azure.com",
+    "azure_ai_endpoint_url_translate": "https://api.cognitive.microsofttranslator.com",
+    "azure_ai_subscription_key_images": "123456789",
+    "azure_ai_subscription_key_translate": "123456789",
+    "image_file_extensions": [
+        "PNG",
+        "JPG",
+        "JPEG"
+    ],
+    "last_file_id": "0",
+    "piwigo_url_root": "https://your-pwigo-installation.de",
+    "piwigo_user": "my_piwigo_user",
+    "piwigo_pass": "my_secure_password",
+    "working_directory": "tmp"
+}

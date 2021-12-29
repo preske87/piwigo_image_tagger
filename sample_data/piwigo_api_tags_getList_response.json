@@ -1,0 +1,23 @@
+{
+    "stat": "ok",
+    "result": {
+        "tags": [
+            {
+                "id": 3,
+                "name": "Au\u00dfenaufnahme",
+                "url_name": "ausenaufnahme",
+                "lastmodified": "2021-01-08 19:16:37",
+                "counter": 2,
+                "url": "https:\/\/piwigo.lcks.de\/index.php?\/tags\/3-ausenaufnahme"
+            },
+            {
+                "id": 2,
+                "name": "Kathedrale",
+                "url_name": "kathedrale",
+                "lastmodified": "2021-01-08 19:16:37",
+                "counter": 2,
+                "url": "https:\/\/piwigo.lcks.de\/index.php?\/tags\/2-kathedrale"
+            }
+        ]
+    }
+}

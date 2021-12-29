@@ -1,0 +1,9 @@
+.vscode
+.venv
+__pycache__
+generate_notifications.log
+config.json
+*.pyc
+.DS_Store
+tmp/*.*
+generate_tags.log*
