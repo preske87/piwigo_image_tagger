@@ -5,5 +5,8 @@ generate_notifications.log
 config.json
 *.pyc
 .DS_Store
-tmp/*.*
+tmp/*.JPG
+tmp/*.PNG
+tmp/*.JPEG
 generate_tags.log*
+log/*.log
