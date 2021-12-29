@@ -51,6 +51,8 @@ python3 generate_tags.py
  docker-compose up -d
  ```
 
+ There is also another `docker-compose` file which contains piwigo and mariadb database to run everything locally: [docker-compose.withPiwigo.yml](docker-compose.withPiwigo.yml).
+
 # Configuration
 All configuration is done through file `config/config.json`. 
 
@@ -63,6 +65,7 @@ Minimum config looks as followed (yes, due to the null-values it will throw erro
     "azure_ai_endpoint_url_translate": null,
     "azure_ai_subscription_key_images": null,
     "azure_ai_subscription_key_translate": null,
+    "azure_ai_subscription_region_translate": null,
     "image_file_extensions": [
         "JPG",
         "JPEG",
@@ -77,6 +80,7 @@ Minimum config looks as followed (yes, due to the null-values it will throw erro
 * `azure_ai_endpoint_url_translate`: this is the Azure endpoint URL you get when you configure the Azure AI translation
 * `azure_ai_subscription_key_images`: this is the subscription key for Azure AI image recognition
 * `azure_ai_subscription_key_translate`: this is the subscription key for Azure AI translation
+* `azure_ai_subscription_region_translate`: this is the region defined for the Azure AI translation
 * `image_file_extensions`: list of file extensions to be processed (uppercase)
 * `piwigo_url_root`: the base URL of your piwigo installation
 * `piwigo_user`: the user to be used for accessing piwigo
@@ -105,6 +109,8 @@ This service is responsible for image recognition.
 
 See [product page](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/#overview).
 
+Or see [Quickstart](https://docs.microsoft.com/en-gb/azure/cognitive-services/Computer-vision/quickstarts-sdk/client-library?pivots=programming-language-python&tabs=visual-studio)
+
 ### Pricing
 Already the free tier is sufficient for small-medium image libraries
 * Free
@@ -116,6 +122,8 @@ Already the free tier is sufficient for small-medium image libraries
 This service is responsible for translation.
 
 See [product page](https://azure.microsoft.com/en-us/services/cognitive-services/translator/#overview).
+
+Or see [What is Translater?](https://docs.microsoft.com/en-gb/azure/cognitive-services/translator/translator-overview?WT.mc_id=Portal-Microsoft_Azure_ProjectOxford)
 
 ### Pricing Tier
 Already the free tier is sufficient for small-medium image libraries.

@@ -38,6 +38,7 @@ class tag_generator():
 
         self.subscription_key_translate = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="azure_ai_subscription_key_translate", create_if_missing=True))
         self.endpoint_url_translate = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="azure_ai_endpoint_url_translate", create_if_missing=True))
+        self.region_translate = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="azure_ai_subscription_region_translate", create_if_missing=True))
 
         #TODO: Make configurable, currently hardcoded also in areas below
         self.translation_from = "en"
@@ -97,8 +98,8 @@ class tag_generator():
                     #TODO: this could be made configurable later on
                     logging.debug("Waiting 3 seconds for the request to prevent exceeding the limit of 20 calls per minute")
                     time.sleep(3)
-                    ai_helper_images = helper.azure_ai_helper(self.endpoint_url_images, self.subscription_key_images)
-                    ai_helper_translate = helper.azure_ai_helper(self.endpoint_url_translate, self.subscription_key_translate)
+                    ai_helper_images = helper.azure_ai_helper(self.endpoint_url_images, self.subscription_key_images, region=None)
+                    ai_helper_translate = helper.azure_ai_helper(self.endpoint_url_translate, self.subscription_key_translate, region=self.region_translate)
                     analysis = ai_helper_images.get_image_analysis(img.local_file)
                     tags = analysis["tags"]
                     logging.info("Fetched " + str(len(tags)) + " tags")
@@ -175,11 +176,11 @@ class tag_generator():
             else:
                 logging.error("Cannot add image id " + str(img.id) + " to the list of processed_images_ids, img.has_processing_error is " + str(img.has_processing_error))
             
-            logging.log("Deleting file " + img.local_file)
+            logging.info("Deleting file " + img.local_file)
             os.remove(img.local_file)
 
     def get_pw_tags(self):
-        logging.log("Getting tags in use at Piwigo")
+        logging.info("Getting tags in use at Piwigo")
         pw_tag_getlist_reply = self.pw.pwg.tags.getAdminList()
         self.pw_tags = dict()
         for pw_tag in pw_tag_getlist_reply["tags"]:

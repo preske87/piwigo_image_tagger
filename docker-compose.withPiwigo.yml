@@ -1,0 +1,48 @@
+version: "2.4"
+
+services:
+
+  piwigo_db:
+    image: mariadb:latest
+    hostname: piwigo_db
+    container_name: piwigo_db
+    volumes:
+      - $HOME/Downloads/piwigo/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=yJzas!CC*x%a
+      - MARIADB_DATABASE=piwigo
+      - MARIADB_USER=piwigo
+      - MARIADB_PASSWORD=p1w1g0
+      - TZ=Europe/Berlin
+    restart: unless-stopped
+
+  #piwigo image: https://hub.docker.com/r/linuxserver/piwigo
+  piwigo:
+    image: lscr.io/linuxserver/piwigo
+    container_name: piwigo
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+    volumes:
+      - $HOME/Downloads/piwigo/config:/config
+      - $HOME/Downloads/piwigo/gallery:/gallery
+    ports:
+      - 8080:80
+    depends_on:
+      - piwigo_db
+    links:
+      - piwigo_db
+    restart: unless-stopped
+
+  container:
+    container_name: tagger
+    build:
+      .
+    volumes:
+      - $HOME/Downloads/piwigo_image_tagger/log:/log
+      - $HOME/Downloads/piwigo_image_tagger/config:/config
+    depends_on:
+      - piwigo
+    links:
+      - piwigo

@@ -3,6 +3,7 @@
     "azure_ai_endpoint_url_translate": "https://api.cognitive.microsofttranslator.com",
     "azure_ai_subscription_key_images": "123456789",
     "azure_ai_subscription_key_translate": "123456789",
+    "azure_ai_subscription_region_translate": "westeurope",
     "image_file_extensions": [
         "PNG",
         "JPG",

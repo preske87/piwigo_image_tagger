@@ -7,9 +7,10 @@ import globals
 
 class azure_ai_helper():
 
-    def __init__(self, endpoint, subscription_key):
+    def __init__(self, endpoint, subscription_key, region):
         self.endpoint = endpoint
         self.subscription_key = subscription_key
+        self.region = region
         logging.info("Creating azure_ai_helper with endpoint '" + self.endpoint + "' and subscription_key '" + self.subscription_key + "'")
 
     def get_translation_en_de(self, text):
@@ -18,7 +19,11 @@ class azure_ai_helper():
         translateable_text = text
 
         # Read the image into a byte array
-        headers = {'Ocp-Apim-Subscription-Key': self.subscription_key, 'Content-Type': 'application/json'}
+        headers = { 
+            'Ocp-Apim-Subscription-Key': self.subscription_key, 
+            'Ocp-Apim-Subscription-Region': self.region,
+            'Content-Type': 'application/json'
+            }
         params = {'api-version': '3.0', 'from': 'en', 'to': ['de']}
         body = []
         body.append({'Text': translateable_text})

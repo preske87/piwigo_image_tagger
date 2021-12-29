@@ -7,44 +7,41 @@ import logging
 
 class config_handler():
     config_file = os.path.join("config", "config.json")
+    config = dict()
+    
     processed_image_id_file = os.path.join("config", "processed_images.json")
+    processed_image_ids = dict()
+    
     translations_file = os.path.join("config", "translations.json")
-    config_values = None
+    translations = dict()
 
     def __init__(self):
-        #Instantiate an empty dict
-        self.config = dict()
-        self.processed_image_ids = dict()
-        self.translations = dict()
-        
         #Create config if it doesn't exist yet
         if not os.path.exists(self.config_file):
             with open(self.config_file, "w") as f:
-                blank_config = dict()
-                json.dump(obj=blank_config, fp=f)
+                json.dump(obj=self.config, fp=f)
         
         if not os.path.exists(self.processed_image_id_file):
             with open(self.processed_image_id_file, "w") as f:
-                processed_image_ids = dict()
-                json.dump(obj=processed_image_ids, fp=f)
+                json.dump(obj=self.processed_image_ids, fp=f)
 
         if not os.path.exists(self.translations_file):
             with open(self.translations_file, "w") as f:
-                translations = dict()
-                json.dump(obj=translations, fp=f)
+                json.dump(obj=self.translations, fp=f)
         
-        self.read_config_from_file(config=self.config, source_file=self.config_file)
+        self.config = self.read_config_from_file(config=self.config, source_file=self.config_file)
         logging.info("config loaded with " + str(len(self.config)) + " records")
 
-        self.read_config_from_file(config=self.processed_image_ids, source_file=self.processed_image_id_file)
+        self.processed_image_ids = self.read_config_from_file(config=self.processed_image_ids, source_file=self.processed_image_id_file)
         logging.info("processed_image_ids loaded with " + str(len(self.processed_image_ids)) + " records")
 
-        self.read_config_from_file(config=self.translations, source_file=self.translations_file)
+        self.translations = self.read_config_from_file(config=self.translations, source_file=self.translations_file)
         logging.info("translations loaded with " + str(len(self.translations)) + " records")
         
     def read_config_from_file(self, config, source_file):
         f = open(source_file, 'r')
-        config = json.load(f)
+        c = json.load(f)
+        return c
     
     def get_config_value(self, config, key, create_if_missing=False, value_if_missing=None):
         if key in config:
