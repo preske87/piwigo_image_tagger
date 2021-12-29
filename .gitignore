@@ -11,3 +11,4 @@ tmp/*.JPEG
 generate_tags.log*
 log/*.log
 log/*.*.log
+config/*.json
