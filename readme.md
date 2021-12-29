@@ -19,15 +19,69 @@ Find out more on Azure Cognitive Services [here](https://azure.microsoft.com/en-
 Already with the **Free** pricing tier noticeable results can be achieved.
 
 # How to use it?
-Insert advise for Docker
 
-````
-python3 -m pip install piwigo
-oder
-pip install piwigo
-oder
-python -m pip install piwigo
-````
+## Option 1: run it locally
+
+Execute the script [generate_tags.py](generate_tags.py) with locally installed python runtime.
+
+It is recommended to use a virtual environment, but not mandatory.
+
+
+Install the PIP requirements:
+```
+python3 -m pip install requests
+python3 -m pip install -r pip_requirements.txt
+```
+
+Then execute the script 
+```
+python3 generate_tags.py
+```
+## Option 2: Run in Docker (recommended)
+ Build a docker container based on the [Dockerfile](Dockerfile):
+ ```
+ docker build --tag pwigo_image_tagger .
+ ``` 
+
+ Then start the container and ensure volumes are mapped for `/config` and `/log`. Volume on `/config` is required for persistency.
+
+ Or make use of [docker-compose](docker-compose.yml) (make sure volumes are mapped as defined in `docker-compose.yml`)
+ ```
+ docker-compose build
+ docker-compose up -d
+ ```
+
+# Configuration
+All configuration is done through file `config/config.json`. 
+
+If it doesn't exist, it is being automatically created on startup with dummy values.
+
+Minimum config looks as followed (yes, due to the null-values it will throw errors)
+```
+{
+    "azure_ai_endpoint_url_images": null,
+    "azure_ai_endpoint_url_translate": null,
+    "azure_ai_subscription_key_images": null,
+    "azure_ai_subscription_key_translate": null,
+    "image_file_extensions": [
+        "JPG",
+        "JPEG",
+        "PNG"
+    ],
+    "piwigo_pass": null,
+    "piwigo_url_root": null,
+    "piwigo_user": null
+}
+```
+* `azure_ai_endpoint_url_images`: this is the Azure endpoint URL you get when you configure the Azure AI image recognition
+* `azure_ai_endpoint_url_translate`: this is the Azure endpoint URL you get when you configure the Azure AI translation
+* `azure_ai_subscription_key_images`: this is the subscription key for Azure AI image recognition
+* `azure_ai_subscription_key_translate`: this is the subscription key for Azure AI translation
+* `image_file_extensions`: list of file extensions to be processed (uppercase)
+* `piwigo_url_root`: the base URL of your piwigo installation
+* `piwigo_user`: the user to be used for accessing piwigo
+* `piwigo_pass`: the password for the pwigo_user
+
 
 # How does it work?
 
@@ -45,19 +99,25 @@ python -m pip install piwigo
       7. The image ID is stored into local config
 
 # Azure Services
-## Cognitive Services: Bilderkennung
+## Cognitive Services: Computer vision (image recognition)
 
-Ist zuständig für die Erkennung von Stichworten auf einem Bild
+This service is responsible for image recognition.
 
-### Pricing Tier
+See [product page](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/#overview).
+
+### Pricing
+Already the free tier is sufficient for small-medium image libraries
 * Free
-    * 20 Calls per minute
-    * 5000 Calls pro Monat
+    * 20 calls per minute
+    * 5000 calls per month
     * 1 Call = 1 Bild
 
 ## Cognitive Services: Translator
-Ist zuständig für die Übersetzung eines englischen Begriffs in einen Deutschen
+This service is responsible for translation.
+
+See [product page](https://azure.microsoft.com/en-us/services/cognitive-services/translator/#overview).
 
 ### Pricing Tier
+Already the free tier is sufficient for small-medium image libraries.
 * Free
-    * 2 Mio Zeichen pro Monat
+    * 2 Mio characters per month

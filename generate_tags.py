@@ -95,8 +95,8 @@ class tag_generator():
                 logging.info("Analyzing image " + img.local_file)
                 try:
                     #TODO: this could be made configurable later on
-                    logging.debug("Waiting 4 seconds for the request to prevent exceeding the limit of 20 calls per minute")
-                    time.sleep(4)
+                    logging.debug("Waiting 3 seconds for the request to prevent exceeding the limit of 20 calls per minute")
+                    time.sleep(3)
                     ai_helper_images = helper.azure_ai_helper(self.endpoint_url_images, self.subscription_key_images)
                     ai_helper_translate = helper.azure_ai_helper(self.endpoint_url_translate, self.subscription_key_translate)
                     analysis = ai_helper_images.get_image_analysis(img.local_file)
