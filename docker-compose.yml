@@ -1,0 +1,10 @@
+version: "2.4"
+
+services:
+
+  container:
+    build:
+      .
+    volumes:
+      - $HOME/Downloads/piwigo_image_tagger/log:/log
+      - $HOME/Downloads/piwigo_image_tagger/config:/config

@@ -26,8 +26,8 @@ class tag_generator():
 
         logging.debug("Retrieving config...")
         self.conf_handler = ch.config_handler()
-        self.working_directory = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="working_directory", create_if_missing=True))
-        self.image_file_extensions = list(self.conf_handler.get_config_value(config=self.conf_handler.config, key="image_file_extensions", create_if_missing=True, values_if_missing=["JPG", "JPEG", "PNG"]))
+        self.working_directory = "tmp"
+        self.image_file_extensions = list(self.conf_handler.get_config_value(config=self.conf_handler.config, key="image_file_extensions", create_if_missing=True, value_if_missing=["JPG", "JPEG", "PNG"]))
         
         self.piwigo_url_root = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="piwigo_url_root", create_if_missing=True))
         self.piwigo_user = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="piwigo_user", create_if_missing=True))

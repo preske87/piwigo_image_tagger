@@ -19,7 +19,7 @@ class config_handler():
         
         #Create config if it doesn't exist yet
         if not os.path.exists(self.config_file):
-            with open(self.processed_image_id_file, "w") as f:
+            with open(self.config_file, "w") as f:
                 blank_config = dict()
                 json.dump(obj=blank_config, fp=f)
         
@@ -46,11 +46,11 @@ class config_handler():
         f = open(source_file, 'r')
         config = json.load(f)
     
-    def get_config_value(self, config, key, create_if_missing=False, values_if_missing=None):
+    def get_config_value(self, config, key, create_if_missing=False, value_if_missing=None):
         if key in config:
             return config[key]
         elif create_if_missing:
-            config[key] = values_if_missing
+            self.set_config_value(key=key, value=value_if_missing)
             return config[key]
         return None
     
