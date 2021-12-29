@@ -116,7 +116,7 @@ Already the free tier is sufficient for small-medium image libraries
 * Free
     * 20 calls per minute
     * 5000 calls per month
-    * 1 Call = 1 Bild
+    * 1 call = 1 image
 
 ## Cognitive Services: Translator
 This service is responsible for translation.
