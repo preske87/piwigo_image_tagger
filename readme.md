@@ -1,7 +1,7 @@
 # About
 This is my first project I am making publically available, so please bear with me if it is not meeting all expectations.
 
-the `piwigo_image_tagger` is a small tool which 
+The `piwigo_image_tagger` is a small tool which 
 * Retrieves images from a Piwigo image library
 * Sends those images to Micsoroft Azure cognitive services for image recognition and tagging
 * Adds the identified tags and descriptions then to the image in Piwigo.
@@ -19,6 +19,8 @@ Find out more on Azure Cognitive Services [here](https://azure.microsoft.com/en-
 Already with the **Free** pricing tier noticeable results can be achieved.
 
 # How to use it?
+
+For all options you need to create a proper `config.json`, either into the project's `/config` directory or via mapping respective file/volume into the docker container.
 
 ## Option 1: run it locally
 
@@ -93,9 +95,9 @@ Minimum config looks as followed (yes, due to the null-values it will throw erro
 2. The script `generate_tags.py` is scheduled for automated execution
    1. Through the piwigo API (all) images are retrieved as json
    2. The script iterates through each of the images
-      1. If the derived `id` is already known (hereby it is matched against the the stored value in `config.json`), the image is skipped. If not: continue
-      2. If the image does not have an allowed file extension (again as per `config.json`), the image is skipped. If the extension is allowed: continue
-      3. The **large** image is being downloaded into a temporary directory
+      1. If the derived `id` is already known (hereby it is matched against the the stored value in `processed_images.json`), the image is skipped. If not: continue
+      2. If the image does not have an allowed file extension (again as per `image_file_extensions` in `config.json`), the image is skipped. If the extension is allowed: continue
+      3. The *large* image is being downloaded into a temporary directory
       4. The downloaded image is being sent into the Azure AI endpoint
       5. The identified tags/keywords meeting the minimum relevance are being translated
          1. Firstly it is being checked if there is already a translation for the keyword available, if not a new translation is taken from Azure AI
