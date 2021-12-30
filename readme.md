@@ -76,6 +76,7 @@ Minimum config looks as followed (yes, due to the null-values it will throw erro
         "PNG"
     ],
     "minimum_confidence_level": 0.7,
+    "wait_time_between_api_calls": 3,
     "piwigo_pass": null,
     "piwigo_url_root": null,
     "piwigo_user": null
@@ -91,6 +92,7 @@ Minimum config looks as followed (yes, due to the null-values it will throw erro
 * `piwigo_url_root`: the base URL of your piwigo installation
 * `piwigo_user`: the user to be used for accessing piwigo
 * `piwigo_pass`: the password for the pwigo_user
+* `wait_time_between_api_calls`: the time period to be waited between images being sent to Azure API. Setting this is required when using the free tiers since they limit the amount of calls per minute.
 
 
 # How does it work?
