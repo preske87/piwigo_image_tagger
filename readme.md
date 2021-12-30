@@ -75,6 +75,7 @@ Minimum config looks as followed (yes, due to the null-values it will throw erro
         "JPEG",
         "PNG"
     ],
+    "minimum_confidence_level": 0.7,
     "piwigo_pass": null,
     "piwigo_url_root": null,
     "piwigo_user": null
@@ -86,6 +87,7 @@ Minimum config looks as followed (yes, due to the null-values it will throw erro
 * `azure_ai_subscription_key_translate`: this is the subscription key for Azure AI translation
 * `azure_ai_subscription_region_translate`: this is the region defined for the Azure AI translation
 * `image_file_extensions`: list of file extensions to be processed (uppercase)
+* `minimum_confidence_level`: the minimum confidence level for identified tags and descriptions. Only tags and description with higher or equal confidence level will be inserted.
 * `piwigo_url_root`: the base URL of your piwigo installation
 * `piwigo_user`: the user to be used for accessing piwigo
 * `piwigo_pass`: the password for the pwigo_user

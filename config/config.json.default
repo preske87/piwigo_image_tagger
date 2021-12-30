@@ -9,6 +9,7 @@
         "JPG",
         "JPEG"
     ],
+    "minimum_confidence_level": 0.7,
     "last_file_id": "0",
     "piwigo_url_root": "https://your-pwigo-installation.de",
     "piwigo_user": "my_piwigo_user",

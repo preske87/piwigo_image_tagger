@@ -28,6 +28,7 @@ class tag_generator():
         self.conf_handler = ch.config_handler()
         self.working_directory = "tmp"
         self.image_file_extensions = list(self.conf_handler.get_config_value(config=self.conf_handler.config, key="image_file_extensions", create_if_missing=True, value_if_missing=["JPG", "JPEG", "PNG"]))
+        self.minimum_confidence_level = float(self.conf_handler.get_config_value(config=self.conf_handler.config, key="minimum_confidence_level", create_if_missing=True, value_if_missing=0.7))
         
         self.piwigo_url_root = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="piwigo_url_root", create_if_missing=True))
         self.piwigo_user = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="piwigo_user", create_if_missing=True))
@@ -104,8 +105,7 @@ class tag_generator():
                     tags = analysis["tags"]
                     logging.info("Fetched " + str(len(tags)) + " tags")
                     for tag in tags:
-                        #TODO: Confidence level could be made configurable
-                        if tag["confidence"] >= 0.7:
+                        if tag["confidence"] >= self.minimum_confidence_level:
                             logging.debug("Tag '" + tag['name'] + "'is relevant enough, translating...")
                             try:
                                 tag_original = tag["name"]
@@ -127,11 +127,10 @@ class tag_generator():
                                 logging.error("Exception during tag translation", exc_info=ex)
                                 img.has_processing_error = True
                         else:
-                            logging.info("Tag '" + tag["name"] + "' has confidence of less than 0.7, (" + str(tag["confidence"]) + ") - skipping ")
+                            logging.info("Tag '" + tag["name"] + "' has confidence of less than " + str(self.minimum_confidence_level) + ", (" + str(tag["confidence"]) + ") - skipping ")
                     if len(analysis["description"]["captions"]) > 0:
                         logging.info("Description was found")
-                        #TODO: Also ere confidence level can be made configurable
-                        if analysis["description"]["captions"][0]["confidence"] >= 0.7:
+                        if analysis["description"]["captions"][0]["confidence"] >= self.minimum_confidence_level:
                             logging.debug("Description meets minimum confidence level")
                             #TODO: Make language configurable
                             caption_en = analysis["description"]["captions"][0]["text"].capitalize()
