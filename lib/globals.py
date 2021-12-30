@@ -13,5 +13,6 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(module)s -  %(mes
 fh.setFormatter(formatter)
 ch.setFormatter(formatter)
 
-logging.getLogger().addHandler(fh)
-logging.getLogger().addHandler(ch)
+if len(logging.getLogger().handlers) == 0:
+    logging.getLogger().addHandler(fh)
+    logging.getLogger().addHandler(ch)
