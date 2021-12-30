@@ -129,10 +129,13 @@ class tag_generator():
                         else:
                             logging.info("Tag '" + tag["name"] + "' has confidence of less than 0.7, (" + str(tag["confidence"]) + ") - skipping ")
                     if len(analysis["description"]["captions"]) > 0:
+                        logging.info("Description was found")
                         #TODO: Also ere confidence level can be made configurable
                         if analysis["description"]["captions"][0]["confidence"] >= 0.7:
+                            logging.debug("Description meets minimum confidence level")
                             #TODO: Make language configurable
                             caption_en = analysis["description"]["captions"][0]["text"].capitalize()
+                            logging.debug("Description is getting translated")
                             caption_de = ai_helper_translate.get_translation_en_de(caption_en)
                             img.caption = caption_de
                 except Exception as ex:
