@@ -6,6 +6,8 @@ The `piwigo_image_tagger` is a small tool which
 * Sends those images to Micsoroft Azure cognitive services for image recognition and tagging
 * Adds the identified tags and descriptions then to the image in Piwigo.
 
+![result in piwigo](readme_images/2021-12-30_09-39-36.png)
+
 
 ## About Piwigo
 Find more about Piwigo on [their website](http://piwigo.org/)
