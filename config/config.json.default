@@ -13,5 +13,7 @@
     "wait_time_between_api_calls": 3,
     "piwigo_url_root": "https://your-pwigo-installation.de",
     "piwigo_user": "my_piwigo_user",
-    "piwigo_pass": "my_secure_password"
+    "piwigo_pass": "my_secure_password",
+    "translation_from": "en",
+    "translation_to": "de"
 }

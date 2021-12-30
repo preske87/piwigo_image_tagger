@@ -79,7 +79,9 @@ Minimum config looks as followed (yes, due to the null-values it will throw erro
     "wait_time_between_api_calls": 3,
     "piwigo_pass": null,
     "piwigo_url_root": null,
-    "piwigo_user": null
+    "piwigo_user": null,
+    "translation_from": "en",
+    "translation_to": "de"
 }
 ```
 * `azure_ai_endpoint_url_images`: this is the Azure endpoint URL you get when you configure the Azure AI image recognition
@@ -93,6 +95,8 @@ Minimum config looks as followed (yes, due to the null-values it will throw erro
 * `piwigo_user`: the user to be used for accessing piwigo
 * `piwigo_pass`: the password for the pwigo_user
 * `wait_time_between_api_calls`: the time period to be waited between images being sent to Azure API. Setting this is required when using the free tiers since they limit the amount of calls per minute.
+* `translation_from`: the language code from which translation should be done. Unless there is an explicit need, leave it it `"en"`
+* `translation_to`: the language code into which translation should be done. Use the language codes [support by Microsoft Azure Translater](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/language-support)
 
 
 # How does it work?

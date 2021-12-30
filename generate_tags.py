@@ -43,9 +43,8 @@ class tag_generator():
         self.endpoint_url_translate = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="azure_ai_endpoint_url_translate", create_if_missing=True))
         self.region_translate = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="azure_ai_subscription_region_translate", create_if_missing=True))
 
-        #TODO: Make configurable, currently hardcoded also in areas below
-        self.translation_from = "en"
-        self.translation_to = "de"
+        self.translation_from = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="translation_from", create_if_missing=True, value_if_missing="en"))
+        self.translation_to = str(self.conf_handler.get_config_value(config=self.conf_handler.config, key="translation_to", create_if_missing=True, value_if_missing="de"))
 
         self.pw = piwi.Piwigo(self.piwigo_url_root)
         self.pw.pwg.session.login(username=self.piwigo_user, password=self.piwigo_pass)
@@ -107,16 +106,16 @@ class tag_generator():
                     logging.info("Fetched " + str(len(tags)) + " tags")
                     for tag in tags:
                         if tag["confidence"] >= self.minimum_confidence_level:
-                            logging.debug("Tag '" + tag['name'] + "'is relevant enough, translating...")
+                            logging.debug("Tag '" + tag['name'] + "'is relevant enough, translating (" + self.translation_from + " to " + self.translation_to + ") ...")
                             try:
                                 tag_original = tag["name"]
-                                tag_translated = self.conf_handler.get_translation(language_from=self.translation_from, language_to=self.translation_to, text_from=tag_original)
+                                tag_translated = self.conf_handler.get_translation(text_from=tag_original, language_from=self.translation_from, language_to=self.translation_to)
                                 
                                 if tag_translated:
                                     logging.debug("Translation does exist: " + tag_original + " -> " + tag_translated)
                                 else:
                                     logging.info("Getting translation for tag '" + tag_original + "' from Azure")
-                                    tag_translated = ai_helper_translate.get_translation_en_de(tag['name'])
+                                    tag_translated = ai_helper_translate.get_translation(text=tag['name'], language_from=self.translation_from, language_to=self.translation_to)
                                     self.conf_handler.set_translation(language_from=self.translation_from, language_to=self.translation_to, text_from=tag_original, text_to=tag_translated)
                                     
                                 tag_translated = tag_translated.capitalize()
@@ -133,11 +132,10 @@ class tag_generator():
                         logging.info("Description was found")
                         if analysis["description"]["captions"][0]["confidence"] >= self.minimum_confidence_level:
                             logging.debug("Description meets minimum confidence level")
-                            #TODO: Make language configurable
-                            caption_en = analysis["description"]["captions"][0]["text"].capitalize()
-                            logging.debug("Description is getting translated")
-                            caption_de = ai_helper_translate.get_translation_en_de(caption_en)
-                            img.caption = caption_de
+                            caption_original = analysis["description"]["captions"][0]["text"].capitalize()
+                            logging.debug("Description is getting translated (" + self.translation_from + " to " + self.translation_to + ")")
+                            caption_translated = ai_helper_translate.get_translation(text=caption_original, language_from=self.translation_from, language_to=self.translation_to)
+                            img.caption = caption_translated
                 except Exception as ex:
                     logging.error("Exception during image analyzing", exc_info=ex)
                     img.has_processing_error = True

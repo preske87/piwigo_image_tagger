@@ -13,7 +13,7 @@ class azure_ai_helper():
         self.region = region
         logging.info("Creating azure_ai_helper with endpoint '" + self.endpoint + "' and subscription_key '" + self.subscription_key + "'")
 
-    def get_translation_en_de(self, text):
+    def get_translation(self, text, language_from:str, language_to:str):
         
         # Set image_path to the local path of an image that you want to analyze.
         translateable_text = text
@@ -24,7 +24,7 @@ class azure_ai_helper():
             'Ocp-Apim-Subscription-Region': self.region,
             'Content-Type': 'application/json'
             }
-        params = {'api-version': '3.0', 'from': 'en', 'to': ['de']}
+        params = {'api-version': '3.0', 'from': language_from, 'to': [language_to]}
         body = []
         body.append({'Text': translateable_text})
         response = requests.post(self.endpoint + "/translate", headers=headers, params=params, json=body)
@@ -40,7 +40,7 @@ class azure_ai_helper():
                 for translation in translations:
                     #l.log(str(translation))
                     #l.log(translation["text"])
-                    if translation["to"] == "de":
+                    if translation["to"] == language_to:
                         return translation["text"]
         return text
 
